@@ -1,0 +1,266 @@
+@font-face {
+    font-family: Vazir;
+    src: url(font/Vazir-Black.eot);
+    src: url(font/Vazir-Black.ttf);
+    src: url(font/Vazir-Black.woff);
+    src: url(font/Vazir-Black.woff2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Vazir;
+}
+.main{
+    width: 90%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.211);
+    border: 1px solid rgba(0, 0, 0, 0.045);
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+    .card001{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        .imgs{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            height: 65%;
+            .img_card{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    display: flex;
+                    width: 70%;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                }
+            }
+            .img_cards{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 50%;
+                height: 100%;
+                img{
+                    display: inline-block;
+                    width:200px;
+                    margin: 10px;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-radius: 10px;
+                    
+                }
+            }
+
+        }
+        
+        .content_card{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 35%;
+            padding: 5px;
+            
+            .right-div{
+                width: 50%;
+                height: 100%;
+                h1{
+                    font-size: 18px;
+                    text-align: center;
+                    padding: 5px;
+                    border-bottom:2px solid black ;
+                    width: 25%;
+                    margin: auto;
+
+                }
+                .content-div{
+                    margin-top: 5px;
+                    h2{
+
+                        padding: 2px;
+                        height: 20%;
+
+                    }
+                    .types{
+                        display: flex;
+                        flex-wrap:wrap ;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 100%;
+                        height: 80%;
+                        div{
+                            width: 45%;
+                            margin: 5px;
+                            padding: 5px;
+                            font-size: 14px;
+                            background-color: rgba(245, 245, 245, 0.656);
+                            border: 1px solid rgba(0, 0, 0, 0.626);
+                            border-radius: 10px;
+                           text-align: center;
+                            
+                        }
+                    }
+                }
+                
+            }
+            .left-div{
+                width: 50%;
+                height: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.626);
+                background-color: rgba(245, 245, 245, 0.656);
+                display: flex;
+                flex-direction: row;
+                border-radius: 10px;
+                .seller{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                    width: 50%;
+                    height: 100%;
+                    padding: 10px;
+                    justify-content: center;
+                    h2{
+                        // background-color: burlywood;
+                        margin: 5px 0;
+                        padding: 10px;
+                    }
+                    .detail{
+                        // background-color: rgb(150, 135, 222);
+                        margin: 5px 0;
+                        padding: 10px;
+                        
+                        span{
+                            padding: 0 10px;
+                            &:hover{
+                                cursor:pointer;
+                            }
+                        }
+                    }
+                    .content_seller{
+                        // background-color: rgb(175, 29, 29);
+                        margin: 5px 0;
+                        padding: 10px;
+                        
+                        span{
+                            padding: 0 10px;
+                            &:hover{
+                                cursor:pointer;
+                            }
+                        }
+                    }
+
+                }
+                .price{
+                    display: flex;
+                    flex-wrap: wrap;
+                    // background-color: darkgoldenrod;
+                    width: 50%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    .div_span{
+                        width: 100%;
+                        height: 50%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        // background-color: cyan;
+                        flex-direction: column-reverse;
+                        text-align: left;
+                        padding: 10px;
+
+                        .span{
+                            width: 49%;
+                            margin: 5px;
+                            display: flex;
+                            padding: 10px;
+                            
+                            
+                        }
+                    }
+                    .buy{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        .numberOF{
+                            width: 48%;
+                            // background-color: darkorange;
+                            background-color: rgba(0, 0, 0, 0.189);
+                            border: 1px solid rgba(0, 0, 0, 0.162);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            padding: 5px;
+                            margin: 5px;
+                            border-radius: 10px;
+                            label{
+                                justify-content: right;
+                                width: 100%;
+
+                            }
+                            input{
+                                width: 90%;
+                                height: 50%;
+                                padding: 5px;
+                                border-radius: 5px;
+                                border: none;
+                                text-align: center;
+                            }
+
+                        }
+                        .sum_price{
+                            width: 48%;
+                            background-color: rgba(0, 0, 0, 0.189);
+                            border: 1px solid rgba(0, 0, 0, 0.162);
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            padding: 5px;
+                            margin: 5px;
+                            border-radius: 10px;
+                            label{
+                                justify-content: right;
+                                width: 100%;
+
+                            }
+                            input{
+                                width: 90%;
+                                height: 50%;
+                                padding: 5px;
+                                border-radius: 5px;
+                                border: none;
+                                pointer-events: none;
+                                text-align: center;
+                            }
+
+                        }
+                    }
+                }
+                
+               
+            }
+            
+        }
+    }
+}
